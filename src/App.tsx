@@ -1,8 +1,9 @@
 import React, {ReactElement} from 'react';
 import {View} from 'react-native';
+import MainComponent from './MainComponent';
 
 const App: () => ReactElement = () => {
-  return <View />;
+  return <MainComponent />;
 };
 
 export default App;

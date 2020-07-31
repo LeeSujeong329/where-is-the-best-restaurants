@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchBar 렌더링 시킬 수 있다. 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "yellow",
+      "flexDirection": "row",
+      "height": 80,
+      "marginTop": 100,
+      "width": 300,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "justifyContent": "center",
+        "width": 230,
+      }
+    }
+  >
+    <TextInput
+      allowFontScaling={true}
+      onChangeText={[Function]}
+      rejectResponderTermination={true}
+      style={
+        Object {
+          "borderWidth": 2,
+          "height": 50,
+        }
+      }
+      underlineColorAndroid="transparent"
+      value=""
+    />
+  </View>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "red",
+        "justifyContent": "center",
+        "opacity": 1,
+        "width": 70,
+      }
+    }
+  >
+    <Text>
+      검색
+    </Text>
+  </View>
+</View>
+`;
