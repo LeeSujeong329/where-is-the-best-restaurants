@@ -5,7 +5,7 @@ describe('MainComponent', () => {
   let MainComponent;
 
   beforeEach(() => {
-    MainComponent = require('../../src/MainComponent').default;
+    MainComponent = require('../../../src/MainComponent').default;
   });
 
   it('렌더링 시킬 수 있다.', () => {

@@ -43,13 +43,29 @@ exports[`MainComponent 렌더링 시킬 수 있다. 1`] = `
       />
     </View>
     <View
+      accessible={true}
+      focusable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
       style={
         Object {
+          "alignItems": "center",
           "backgroundColor": "red",
+          "justifyContent": "center",
+          "opacity": 1,
           "width": 70,
         }
       }
-    />
+    >
+      <Text>
+        검색
+      </Text>
+    </View>
   </View>
 </View>
 `;
