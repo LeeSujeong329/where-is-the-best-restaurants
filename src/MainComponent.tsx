@@ -8,6 +8,10 @@ class MainComponent extends React.Component {
         super(props);
 
         this.requestTheBestRestaurants = this.requestTheBestRestaurants.bind(this);
+
+        this.state = {
+            theBestRestaurants: [],
+        };
     }
 
     async requestTheBestRestaurants(sigunNM: string) {
@@ -22,10 +26,19 @@ class MainComponent extends React.Component {
         const response = await fetch(path, options);
         const json = await response.json();
 
-        console.log(json);
+        console.log(json.PlaceThatDoATasteyFoodSt[1].row);
+
+        this.setTheBestRestaurants(json.PlaceThatDoATasteyFoodSt[1].row);
+    }
+
+    setTheBestRestaurants(theBestRestaurants: any[]) {
+        this.setState({
+            theBestRestaurants: theBestRestaurants
+        });
     }
 
     render() {
+        console.log(this.state.theBestRestaurants);
         return (
             <View
                 style={{
