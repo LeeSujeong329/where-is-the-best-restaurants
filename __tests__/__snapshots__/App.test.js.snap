@@ -67,5 +67,16 @@ exports[`App Test renders correctly 1`] = `
       </Text>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "height": 1084,
+        "marginTop": 50,
+        "width": 750,
+      }
+    }
+  >
+    <View />
+  </View>
 </View>
 `;

@@ -1,6 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
-import SearchBar from './components/SearchBar'
+import SearchBar from './components/SearchBar';
+import TheBestRestaurants from './components/TheBestRestaurants';
 
 class MainComponent extends React.Component {
 
@@ -38,7 +39,6 @@ class MainComponent extends React.Component {
     }
 
     render() {
-        console.log(this.state.theBestRestaurants);
         return (
             <View
                 style={{
@@ -47,6 +47,7 @@ class MainComponent extends React.Component {
                 }}
             >
                 <SearchBar onPressSearch={this.requestTheBestRestaurants}/>
+                <TheBestRestaurants />
             </View>
         );
     }

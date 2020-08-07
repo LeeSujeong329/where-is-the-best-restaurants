@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TheBestRestaurants 렌더링 시킬 수 있다. 1`] = `
+<View
+  style={
+    Object {
+      "height": 1084,
+      "marginTop": 50,
+      "width": 750,
+    }
+  }
+>
+  <View />
+</View>
+`;

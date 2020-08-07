@@ -67,5 +67,16 @@ exports[`MainComponent 렌더링 시킬 수 있다. 1`] = `
       </Text>
     </View>
   </View>
+  <View
+    style={
+      Object {
+        "height": 1084,
+        "marginTop": 50,
+        "width": 750,
+      }
+    }
+  >
+    <View />
+  </View>
 </View>
 `;
