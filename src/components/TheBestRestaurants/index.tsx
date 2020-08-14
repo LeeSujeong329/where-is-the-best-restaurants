@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, StyleSheet, Dimensions } from 'react-native';
+import { View, StyleSheet, Dimensions, Text } from 'react-native';
 import MapView, { PROVIDER_GOOGLE } from 'react-native-maps'
 
 
@@ -23,7 +23,17 @@ class TheBestRestaurants extends React.Component {
                 }}
                 style={styles.mapStyle}
               />
-              {/* 맛집 리스트 */}
+              <View style={{flex: 1, backgroundColor: 'yellow', alignItems: 'center'}}>
+                {
+                  this.props.data.map((restaurant, index) => {
+                    return (
+                      <View key={index} style={{width: screen.width-20, height: 50, backgroundColor: 'pink', padding: 10, margin: 10}}>
+                        <Text>{index+1 + '. ' +restaurant.RESTRT_NM}</Text>
+                      </View>
+                    );
+                  })
+                } 
+              </View>
             </View>
         );
     }

@@ -47,7 +47,7 @@ class MainComponent extends React.Component {
                 }}
             >
                 <SearchBar onPressSearch={this.requestTheBestRestaurants}/>
-                <TheBestRestaurants />
+                <TheBestRestaurants data={this.state.theBestRestaurants}/>
             </View>
         );
     }
